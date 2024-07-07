@@ -125,7 +125,7 @@ const LoanPacket = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group@2x.png"
+                src="/mask-group2@2x.png"
               />
               <b className={styles.simulation}>SIMULATION</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -154,7 +154,7 @@ const LoanPacket = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group@2x.png"
+                src="/mask-group3@2x.png"
               />
               <b className={styles.education}>EDUCATION</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -183,7 +183,7 @@ const LoanPacket = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group@2x.png"
+                src="/mask-group4@2x.png"
               />
               <b className={styles.selfCare}>SELF-CARE</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />

@@ -221,7 +221,7 @@ const MainPage = () => {
           <img
             className={styles.maskGroupIcon1}
             alt=""
-            src="/mask-group@2x.png"
+            src="/mask-group1@2x.png"
           />
           <div className={styles.technologiesServicesParent}>
             <b className={styles.introduction}>{`TECHNOLOGIES & SERVICES`}</b>
