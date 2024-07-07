@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import { useState, useCallback } from "react";
 import "antd/dist/antd.min.css";
 import { Select } from "antd";
@@ -8,7 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./form.module.css";
 
-const Form: NextPage = () => {
+const Form = () => {
   const [isModalPopupOpen, setModalPopupOpen] = useState(false);
   const router = useRouter();
 
@@ -87,7 +86,7 @@ const Form: NextPage = () => {
                 placeholder="Payment type"
                 style={{ width: "1058px" }}
                 showSearch
-                filterOption={(input: any, option: any) =>
+                filterOption={(input, option) =>
                   option.children.toLowerCase().indexOf(input.toLowerCase()) >=
                   0
                 }
@@ -103,7 +102,7 @@ const Form: NextPage = () => {
                 className={styles.vayMuaOtoParent}
                 placeholder="Loan packets"
                 style={{ width: "1058px" }}
-                filterOption={(input: any, option: any) =>
+                filterOption={(input, option) =>
                   option.children.toLowerCase().indexOf(input.toLowerCase()) >=
                   0
                 }
@@ -202,7 +201,7 @@ const Form: NextPage = () => {
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="/mask-group5@2x.png"
+            src="/mask-group@2x.png"
           />
           <div className={styles.groupParent}>
             <div className={styles.intoRealityParent}>
@@ -294,7 +293,7 @@ const Form: NextPage = () => {
               </div>
             </div>
           </a>
-          <Link className={styles.groupA} href="/">
+          <Link className={styles.groupA} href="/sign-in">
             <div className={styles.groupChild3} />
             <b className={styles.signIn}>Sign in</b>
           </Link>

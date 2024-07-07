@@ -1,12 +1,11 @@
-import type { NextPage } from "next";
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import Modal from "../components/modal";
 import PortalPopup from "../components/portal-popup";
 import { useRouter } from "next/router";
-import styles from "./main-page.module.css";
+import styles from "./index.module.css";
 
-const MainPage: NextPage = () => {
+const MainPage = () => {
   const [isModalPopupOpen, setModalPopupOpen] = useState(false);
   const router = useRouter();
 
@@ -32,7 +31,7 @@ const MainPage: NextPage = () => {
           <img className={styles.vectorIcon} alt="" src="/vector-4.svg" />
         </span>
         <header className={styles.heroSection}>
-          <Link className={styles.signinBtn} href="/">
+          <Link className={styles.signinBtn} href="/sign-in">
             <button className={styles.signinBtnChild} />
             <b className={styles.signIn}>Sign in</b>
           </Link>
@@ -89,7 +88,7 @@ const MainPage: NextPage = () => {
               <b className={styles.loanNow1}>Loan now</b>
             </div>
             <a className={styles.outlineArrowSmallRight} href="#">
-              <img className={styles.shapeIcon} alt="" src="/shape.svg" />
+              <div className={styles.shape} />
             </a>
           </Link>
           <div className={styles.heroSectionItem} />
@@ -117,11 +116,9 @@ const MainPage: NextPage = () => {
               anhphuwowng2k@gmail.com
             </div>
             <b className={styles.sendUsA}>Send Us a Message</b>
-            <img
-              className={styles.outlineMail}
-              alt=""
-              src="/outline--mail.svg"
-            />
+            <div className={styles.outlineMail}>
+              <div className={styles.shape1} />
+            </div>
           </a>
           <a className={styles.parent} href="tel:0987654321">
             <div className={styles.div}>(110) 1111-1010</div>
@@ -224,7 +221,7 @@ const MainPage: NextPage = () => {
           <img
             className={styles.maskGroupIcon1}
             alt=""
-            src="/mask-group1@2x.png"
+            src="/mask-group@2x.png"
           />
           <div className={styles.technologiesServicesParent}>
             <b className={styles.introduction}>{`TECHNOLOGIES & SERVICES`}</b>

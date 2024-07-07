@@ -1,12 +1,11 @@
-import type { NextPage } from "next";
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import Modal from "../components/modal";
 import PortalPopup from "../components/portal-popup";
 import { useRouter } from "next/router";
-import styles from "./payment.module.css";
+import styles from "./loan-packet.module.css";
 
-const Payment: NextPage = () => {
+const LoanPacket = () => {
   const [isModalPopupOpen, setModalPopupOpen] = useState(false);
   const router = useRouter();
 
@@ -24,17 +23,17 @@ const Payment: NextPage = () => {
 
   return (
     <>
-      <div className={styles.payment}>
-        <img className={styles.paymentChild} alt="" src="/vector-11.svg" />
-        <img className={styles.paymentItem} alt="" src="/vector-31.svg" />
-        <img className={styles.paymentInner} alt="" src="/vector-22.svg" />
+      <div className={styles.loanPacket}>
+        <img className={styles.loanPacketChild} alt="" src="/vector-11.svg" />
+        <img className={styles.loanPacketItem} alt="" src="/vector-31.svg" />
+        <img className={styles.loanPacketInner} alt="" src="/vector-22.svg" />
         <img className={styles.vectorIcon} alt="" src="/vector-41.svg" />
-        <img className={styles.paymentChild1} alt="" src="/vector-71.svg" />
-        <img className={styles.paymentChild2} alt="" src="/vector-81.svg" />
-        <img className={styles.paymentChild3} alt="" src="/vector-14.svg" />
-        <img className={styles.paymentChild4} alt="" src="/vector-15.svg" />
-        <img className={styles.paymentChild5} alt="" src="/vector-18.svg" />
-        <img className={styles.paymentChild6} alt="" src="/vector-19.svg" />
+        <img className={styles.loanPacketChild1} alt="" src="/vector-71.svg" />
+        <img className={styles.loanPacketChild2} alt="" src="/vector-81.svg" />
+        <img className={styles.loanPacketChild3} alt="" src="/vector-14.svg" />
+        <img className={styles.loanPacketChild4} alt="" src="/vector-15.svg" />
+        <img className={styles.loanPacketChild5} alt="" src="/vector-18.svg" />
+        <img className={styles.loanPacketChild6} alt="" src="/vector-19.svg" />
         <div className={styles.footerSection}>
           <b className={styles.aboutServicesTechnologiesContainer}>
             <p className={styles.about}>ABOUT</p>
@@ -126,7 +125,7 @@ const Payment: NextPage = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group6@2x.png"
+                src="/mask-group@2x.png"
               />
               <b className={styles.simulation}>SIMULATION</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -155,7 +154,7 @@ const Payment: NextPage = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group7@2x.png"
+                src="/mask-group@2x.png"
               />
               <b className={styles.education}>EDUCATION</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -184,7 +183,7 @@ const Payment: NextPage = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group8@2x.png"
+                src="/mask-group@2x.png"
               />
               <b className={styles.selfCare}>SELF-CARE</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -212,11 +211,7 @@ const Payment: NextPage = () => {
             </div>
             <div className={styles.rectangleParent3}>
               <div className={styles.groupItem} />
-              <img
-                className={styles.groupIcon}
-                alt=""
-                src="/group-761@2x.png"
-              />
+              <img className={styles.groupIcon} alt="" src="/group-76@2x.png" />
               <b className={styles.selfCare}>OUTDOOR</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
               <div className={styles.vitaeSapienPellentesqueContainer1}>
@@ -241,7 +236,7 @@ const Payment: NextPage = () => {
           </div>
         </div>
         <header className={styles.heroSection}>
-          <Link className={styles.groupA} href="/">
+          <Link className={styles.groupA} href="/sign-in">
             <div className={styles.groupChild12} />
             <b className={styles.signIn}>Sign in</b>
           </Link>
@@ -290,11 +285,9 @@ const Payment: NextPage = () => {
               <div className={styles.groupChild} />
               <b className={styles.loanNow4}>Loan now</b>
             </div>
-            <img
-              className={styles.outlineArrowSmallRight}
-              alt=""
-              src="/outline--arrowsmallright.svg"
-            />
+            <div className={styles.outlineArrowSmallRight}>
+              <div className={styles.shape} />
+            </div>
           </Link>
           <div className={styles.heroSectionItem} />
           <a className={styles.locationIconParent} href="#">
@@ -364,4 +357,4 @@ const Payment: NextPage = () => {
   );
 };
 
-export default Payment;
+export default LoanPacket;
