@@ -126,7 +126,7 @@ const Payment: NextPage = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group@2x.png"
+                src="/mask-group6@2x.png"
               />
               <b className={styles.simulation}>SIMULATION</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -155,7 +155,7 @@ const Payment: NextPage = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group@2x.png"
+                src="/mask-group7@2x.png"
               />
               <b className={styles.education}>EDUCATION</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -184,7 +184,7 @@ const Payment: NextPage = () => {
               <img
                 className={styles.maskGroupIcon}
                 alt=""
-                src="/mask-group@2x.png"
+                src="/mask-group8@2x.png"
               />
               <b className={styles.selfCare}>SELF-CARE</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
@@ -212,7 +212,11 @@ const Payment: NextPage = () => {
             </div>
             <div className={styles.rectangleParent3}>
               <div className={styles.groupItem} />
-              <img className={styles.groupIcon} alt="" src="/group-76@2x.png" />
+              <img
+                className={styles.groupIcon}
+                alt=""
+                src="/group-761@2x.png"
+              />
               <b className={styles.selfCare}>OUTDOOR</b>
               <img className={styles.groupChild1} alt="" src="/vector-10.svg" />
               <div className={styles.vitaeSapienPellentesqueContainer1}>
@@ -254,7 +258,7 @@ const Payment: NextPage = () => {
           <img
             className={styles.heroSectionChild}
             alt=""
-            src="/group-72@2x.png"
+            src="/group-22@2x.png"
           />
           <div className={styles.groupParent1}>
             <div className={styles.intoRealityParent}>

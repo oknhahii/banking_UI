@@ -202,7 +202,7 @@ const Form: NextPage = () => {
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="/mask-group@2x.png"
+            src="/mask-group5@2x.png"
           />
           <div className={styles.groupParent}>
             <div className={styles.intoRealityParent}>
